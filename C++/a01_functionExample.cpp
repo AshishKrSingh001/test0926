@@ -15,7 +15,7 @@ int area() // Returntype without parameter
 {
     return ab.breadth*ab.length;
 }
-int peri() //// Returntype without parameter
+int peri() //// Ashish kr Singh
 {
     return 2*(ab.breadth+ab.length);
 }
