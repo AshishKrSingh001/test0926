@@ -8,7 +8,7 @@ struct Rectangle
 }ab;
 void input() // Non-returntype without parameter
 {
-    cout<<"Enter length and breadth of the rectangle:"<<endl;
+    cout<<"Enter length and breadth of the rectangle::"<<endl;
     cin>>ab.length>>ab.breadth;
 }
 int area() // Returntype without parameter
