@@ -1,0 +1,14 @@
+D:\Repo\test0926\VB.NET\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.exe
+D:\Repo\test0926\VB.NET\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.deps.json
+D:\Repo\test0926\VB.NET\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.runtimeconfig.json
+D:\Repo\test0926\VB.NET\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.dll
+D:\Repo\test0926\VB.NET\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.pdb
+D:\Repo\test0926\VB.NET\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repo\test0926\VB.NET\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.AssemblyInfoInputs.cache
+D:\Repo\test0926\VB.NET\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.AssemblyInfo.vb
+D:\Repo\test0926\VB.NET\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.vbproj.CoreCompileInputs.cache
+D:\Repo\test0926\VB.NET\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.dll
+D:\Repo\test0926\VB.NET\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\refint\ConsoleApp1.dll
+D:\Repo\test0926\VB.NET\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.pdb
+D:\Repo\test0926\VB.NET\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.genruntimeconfig.cache
+D:\Repo\test0926\VB.NET\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ref\ConsoleApp1.dll
