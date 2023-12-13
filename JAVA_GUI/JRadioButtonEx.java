@@ -4,7 +4,7 @@ import javax.swing.*;
 public class JRadioButtonEx extends JFrame
 {
 	JPanel jp;
-	JRadioButton male,female;
+	JRadioButton male,female,other;
 	ButtonGroup bg;
 	public JRadioButtonEx()
 	{
@@ -14,11 +14,16 @@ public class JRadioButtonEx extends JFrame
 		male = new JRadioButton("Male");
 		female = new JRadioButton("Female");
 		
+		ImageIcon icon = new ImageIcon(new ImageIcon("C:\\Users\\ashis\\OneDrive\\Pictures\\Dark-Wallpaper-01-2560-x-1569.jpg").getImage().getScaledInstance(20,20,4));
+		other = new JRadioButton(icon);
+
 		bg.add(male);
 		bg.add(female);
+		bg.add(other);
 		
 		jp.add(male);
 		jp.add(female);
+		jp.add(other);
 		
 		add(jp);
 		setTitle("JRadioButton");
