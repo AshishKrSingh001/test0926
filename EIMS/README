@@ -1,0 +1,32 @@
+Employee Information Management System
+Creating an employee and department management system in VB.NET involves designing a user interface, defining data structures, managing databases, and implementing functionality to perform CRUD (Create, Read, Update, Delete) operations on employee and department records. Below is a simple example to get you started. This example uses Microsoft SQL Server as the database.
+Prerequisites:
+1.	Visual Studio (for VB.NET development)
+2.	SQL Server (Express or any edition)
+Steps:
+Create a Database:
+Open Service based Database in Visual Studio and create a Database named  
+Create two tables: "EmpTable" and "DeptTable".
+“EmpTable” for Employee’s Details.
+CREATE TABLE [dbo].[EmpTable] 
+(
+    [EmpNo]   INT          NOT NULL,
+    [EmpName] VARCHAR (50) NULL,
+    [Salary]  NUMERIC (18) NULL,
+    [DptNo]   INT          NULL,
+    [Date_OJ] DATE         NULL,
+    PRIMARY KEY CLUSTERED ([EmpNo] ASC),
+CONSTRAINT [FK_EmpTable_ToTable] FOREIGN KEY ([DptNo]) REFERENCES        [dbo].[DeptTable] ([DptNo])
+);
+{ “EmpNo”: Employee’s Id, “EmpName”:  Employee’s Name, “Salary”: Salary of Employee, “DptNo”: Department No from selection from department table, “Date_Oj”: Date of Joining of Employee }
+
+“DeptTable” for Department’s Details.
+CREATE TABLE [dbo].[DeptTable] 
+(
+    [DptNo]    INT          NOT NULL,
+    [DptName]  VARCHAR (50) NULL,
+    [Location] VARCHAR (50) NULL,
+    PRIMARY KEY CLUSTERED ([DptNo] ASC)
+);
+{ “DptNo”: Department’s Id, “DptName”: Department’s Name, “Location”: Location of Department}
+
