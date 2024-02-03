@@ -1,4 +1,4 @@
-print("Hello World")
+print("Hello")
 
 #input in python As String
 x = input("Enter your Name: ")
