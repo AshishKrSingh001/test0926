@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scrollbar-width: thin;
+            scrollbar-color: var(--scroll-bar-color) var(--scroll-bar-bg-color);
+        }
+        body{
+            overflow-x: hidden;
+            overflow-y: scroll; 
+            font-size: 1.5vw;
+           
+        }
+        .container{
+            font-family: "Poppins", sans-serif;
+            background-color: black;
+            height: 10vw;
+            width:100%;
+            margin-bottom:2vh;
+            
+        }
+        .logo{
+            float: left;
+            font-style: italic;
+            margin-left: 0.5vw 1vw;
+            margin: 2vw 2vw;
+        }
+        .x{
+            float:none;
+        }
+        .menu li{
+            float:right;
+            margin: 3vw 1.5vw;
+            text-shadow: cornsilk;      
+            text-transform: uppercase; 
+            font-family: "Comic Sans MS", "Comic Sans";   
+        }
+        .menu .search{
+            float:none;
+        }
+        .search{
+            height:3vw;
+            width: 18vw;
+            border-top-left-radius: 1vw;
+            border-bottom-left-radius: 1vw;
+            padding: 1vw;
+            border: none;
+            font-family: "Comic Sans MS", "Comic Sans";
+            overflow: hidden;
+        }
+        .img_search img{
+            height: 2.6vw;
+            width: 2vw;
+            cursor: pointer;
+            border-radius: 40%;
+            border: none;
+        }
+        .cartlogo,.loginlogo{
+            border-radius: 45%;
+            height: 2vw;
+            float: left;
+            width: 2vw;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        ul{
+            list-style: none;
+        }
+        li .input1{
+            color:white;
+            background-color:transparent;
+            border:none;
+            font-size:1.4vw;
+            cursor: pointer;
+        }
+        
+    

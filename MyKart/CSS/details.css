@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding:0;
+    /*#2a2b2f 
+    #36383F*/
+}
+.main{
+    /* height:450vh; */
+    height:auto;
+    width:99vw;
+    background-color: #2a2b2f;
+    color:white;
+    padding:5vh 5vw;
+    font-family: "Comic Sans MS", "Comic Sans";
+}
+.abc{
+    /* height:440vh; */
+    height:auto;
+    width:89vw;
+    background-color:rgb(28, 26, 26);
+    border-radius:30px;
+    padding:2vh 2vw;
+}
+.a,.b,.c,.d,.e{
+    height:auto;
+    width:85vw;
+}
+.a{
+    padding:2vh 2vw;
+}
+.b{
+    background-color: black;
+    padding:2vh 2vw;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+}
+.logo1{
+    border-radius:20px;
+    height:330px;
+    width:220px;
+}
+.b1{
+    margin:0 2vw 0 0;
+}
+.b2 p{
+    margin-bottom:3vh;
+}
+.c{
+    padding:2vh;
+    color: #dbdef1;
+}
+.c h3{
+    color:white;
+}
+.c .p1{
+    color:green;
+    text-align:center;
+}
+.d{
+    padding:2vh;
+}
+.d img{
+    width:83vw;
+    border-radius:20px;
+    margin-top:2vh;
+}
+.d h2{
+    text-align:center;
+}
+hr{
+    margin:2vh 0;
+}
+.e form input{
+    height:9vh;
+    width:25vw;
+    cursor: pointer;
+    color:white;
+    background-color:blue;
+    border-radius:10px;
+    box-shadow: 0px 10px 100px 25px #28283d;
+    padding:1vh;
+    font-size: 2vw;
+    font-weight: bold;
+}
+.e .msg{
+    font-weight:bold;
+    margin:3vh 3vw;
+    background-color: pink;
+    color:black;
+    border-radius:10px;
+}
+
+.f ul{
+    padding:2vh 2vw;
+    margin:2vh 2vw;
+    height:57vh;
+    width:45vw;
+    border:2px dotted white;
+    font-weight:bold;
+    border-radius:10px;
+}
+.f li input,textarea{
+    margin-bottom:1vh;
+    border-radius:10px;
+    border:none;
+    background-color: white;
+    color:black;
+}
+.f li .input,textarea{
+    padding-left:1vw;
+}
+textarea{
+    height:20vh;
+    padding:2vh;
+    width:40vw;
+}
+.f li .input{
+    height:5vh;
+    width:40vw;
+}
+.f li .btn{
+    cursor:pointer;
+    margin:1vh 1vw;
+    height:4vh;
+    width:6vw;
+    font-weight:bold;
+    background-color: green;
+    color:white;
+}
+.btn:hover,.input:hover,textarea:hover{
+    background-color: grey;
+}
+.f .pic img{
+    margin:2vh 0 ;
+    height:57vh;
+    width:35vw;
+    border-radius:10px;
+}
+.f .com{
+    float:left;
+}
+.f .pic{
+    float:none;
+}
+.f nav{
+    margin:.5vh;
+}
+b{
+    color: white;
+}
