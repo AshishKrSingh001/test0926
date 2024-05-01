@@ -6,7 +6,7 @@ Public Class a10_EmployeesBetweenRangeofSalary
     Dim ds As DataSet
     Private Sub EmployeesBetweenRangeofSalary_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
-            Dim cmd As New SqlCommand("select * from EmpTable", con)
+            Dim cmd As New SqlCommand("Select EmpNo,EmpName,Salary,DptName,Date_OJ from EmpTable,DeptTable where DeptTable.Dptno = EmpTable.Dptno", con)
             Dim da As New SqlDataAdapter(cmd)
             ds = New DataSet
             da.Fill(ds, "Emp")
@@ -22,10 +22,8 @@ Public Class a10_EmployeesBetweenRangeofSalary
                 .Columns(0).HeaderCell.Value = "Employee's No"
                 .Columns(1).HeaderCell.Value = "Employee's Name"
                 .Columns(2).HeaderCell.Value = "Salary"
-                .Columns(3).HeaderCell.Value = "Department No"
+                .Columns(3).HeaderCell.Value = "Department Name"
                 .Columns(4).HeaderCell.Value = "Date of Join"
-                .Columns(5).HeaderCell.Value = "Email"
-                .Columns(5).FillWeight = 155
             End With
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -38,7 +36,7 @@ Public Class a10_EmployeesBetweenRangeofSalary
         Try
             If CDec(TextBox1.Text) < CDec(TextBox2.Text) Then
                 Try
-                    Dim cmd As New SqlCommand("select * from EmpTable where Salary > @sal1 and Salary < @sal2", con)
+                    Dim cmd As New SqlCommand("Select EmpNo,EmpName,Salary,DptName,Date_OJ from EmpTable,DeptTable where DeptTable.Dptno = EmpTable.Dptno AND Salary > @sal1 and Salary < @sal2", con)
                     cmd.Parameters.Add("@sal1", SqlDbType.Int).Value = CDec(TextBox1.Text)
                     cmd.Parameters.Add("@sal2", SqlDbType.Int).Value = CDec(TextBox2.Text)
                     Dim da As New SqlDataAdapter(cmd)
@@ -55,9 +53,8 @@ Public Class a10_EmployeesBetweenRangeofSalary
                         .Columns(0).HeaderCell.Value = "Employee's No"
                         .Columns(1).HeaderCell.Value = "Employee's Name"
                         .Columns(2).HeaderCell.Value = "Salary"
-                        .Columns(3).HeaderCell.Value = "Date of Join"
-                        .Columns(5).HeaderCell.Value = "Email"
-                        .Columns(5).FillWeight = 155
+                        .Columns(3).HeaderCell.Value = "Department Name"
+                        .Columns(4).HeaderCell.Value = "Date of Join"
                     End With
 
                     Dim cmd1 As New SqlCommand("select count(*) from EmpTable where Salary > @sal1 and Salary < @sal2", con)

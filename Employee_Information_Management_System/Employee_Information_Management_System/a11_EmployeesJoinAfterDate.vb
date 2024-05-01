@@ -6,7 +6,7 @@ Public Class a11_EmployeesJoinAfterDate
     Dim ds As DataSet
     Private Sub EmployeesJoinAfterDate_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
-            Dim cmd As New SqlCommand("Select * from EmpTable", con)
+            Dim cmd As New SqlCommand("Select EmpNo,EmpName,Salary,DptName,Date_OJ from EmpTable,DeptTable where DeptTable.Dptno = EmpTable.Dptno", con)
             Dim da As New SqlDataAdapter(cmd)
             ds = New DataSet
             da.Fill(ds, "Emp")
@@ -22,7 +22,7 @@ Public Class a11_EmployeesJoinAfterDate
                 .Columns(0).HeaderCell.Value = "Employee's No"
                 .Columns(1).HeaderCell.Value = "Employee's Name"
                 .Columns(2).HeaderCell.Value = "Salary"
-                .Columns(3).HeaderCell.Value = "Department No"
+                .Columns(3).HeaderCell.Value = "Department Name"
                 .Columns(4).HeaderCell.Value = "Date of Join"
             End With
 
@@ -39,7 +39,7 @@ Public Class a11_EmployeesJoinAfterDate
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Try
-            Dim cmd As New SqlCommand("Select * from EmpTable where Date_OJ > @d", con)
+            Dim cmd As New SqlCommand("Select EmpNo,EmpName,Salary,DptName,Date_OJ from EmpTable,DeptTable where DeptTable.Dptno = EmpTable.Dptno and Date_OJ > @d", con)
             cmd.Parameters.Add("@d", SqlDbType.Date).Value = DateTimePicker1.Value
             Dim da As New SqlDataAdapter(cmd)
             ds = New DataSet

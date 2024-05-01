@@ -8,7 +8,7 @@ Public Class a15_rptAttendenceRecord
     Dim ds As DataSet
     Sub displayRecords()
         Try
-            Dim cmd As New SqlCommand("Select Id,EmpTable.EmpNo,EmpName,DptNo,attenDate,inTime,inStatus,outTime,outStatus,TimeDuration from AttendanceTable,EmpTable where AttendanceTable.EmpNo = EmpTable.EmpNo", con)
+            Dim cmd As New SqlCommand("Select EmpTable.EmpNo,EmpName,DptNo,attenDate,inTime,inStatus,outTime,outStatus,TimeDuration from AttendanceTable,EmpTable where AttendanceTable.EmpNo = EmpTable.EmpNo", con)
             Dim da As New SqlDataAdapter(cmd)
             ds = New DataSet
             da.Fill(ds, "Atten")
@@ -21,16 +21,15 @@ Public Class a15_rptAttendenceRecord
             dgvEmp.EnableHeadersVisualStyles = False
             With dgvEmp
                 .RowHeadersVisible = False
-                .Columns(0).HeaderCell.Value = "S.NO"
-                .Columns(1).HeaderCell.Value = "Employee's No"
-                .Columns(2).HeaderCell.Value = "Employee's Name"
-                .Columns(3).HeaderCell.Value = "Department No"
-                .Columns(4).HeaderCell.Value = "Date"
-                .Columns(5).HeaderCell.Value = "In Time"
-                .Columns(6).HeaderCell.Value = "In Status"
-                .Columns(7).HeaderCell.Value = "Out Time"
-                .Columns(8).HeaderCell.Value = "Out Status"
-                .Columns(9).HeaderCell.Value = "Time Duration"
+                .Columns(0).HeaderCell.Value = "Employee's No"
+                .Columns(1).HeaderCell.Value = "Employee's Name"
+                .Columns(2).HeaderCell.Value = "Department No"
+                .Columns(3).HeaderCell.Value = "Date"
+                .Columns(4).HeaderCell.Value = "In Time"
+                .Columns(5).HeaderCell.Value = "In Status"
+                .Columns(6).HeaderCell.Value = "Out Time"
+                .Columns(7).HeaderCell.Value = "Out Status"
+                .Columns(8).HeaderCell.Value = "Time Duration"
             End With
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)

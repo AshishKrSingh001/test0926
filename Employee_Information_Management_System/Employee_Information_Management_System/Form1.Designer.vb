@@ -46,9 +46,10 @@ Partial Class Form1
         ReportOfAllRecordToolStripMenuItem = New ToolStripMenuItem()
         EmployeesAttendenceToolStripMenuItem = New ToolStripMenuItem()
         ExitToolStripMenuItem1 = New ToolStripMenuItem()
+        GeneratePayrollToolStripMenuItem = New ToolStripMenuItem()
         ExitToolStripMenuItem = New ToolStripMenuItem()
         PictureBox1 = New PictureBox()
-        GeneratePayrollToolStripMenuItem = New ToolStripMenuItem()
+        ViewPayrollToolStripMenuItem = New ToolStripMenuItem()
         MenuStrip1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -198,11 +199,17 @@ Partial Class Form1
         ' 
         ' ExitToolStripMenuItem1
         ' 
-        ExitToolStripMenuItem1.DropDownItems.AddRange(New ToolStripItem() {GeneratePayrollToolStripMenuItem})
+        ExitToolStripMenuItem1.DropDownItems.AddRange(New ToolStripItem() {GeneratePayrollToolStripMenuItem, ViewPayrollToolStripMenuItem})
         ExitToolStripMenuItem1.Font = New Font("Segoe UI Black", 9F, FontStyle.Bold Or FontStyle.Italic)
         ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
         ExitToolStripMenuItem1.Size = New Size(76, 24)
         ExitToolStripMenuItem1.Text = "Payroll"
+        ' 
+        ' GeneratePayrollToolStripMenuItem
+        ' 
+        GeneratePayrollToolStripMenuItem.Name = "GeneratePayrollToolStripMenuItem"
+        GeneratePayrollToolStripMenuItem.Size = New Size(224, 26)
+        GeneratePayrollToolStripMenuItem.Text = "GeneratePayroll"
         ' 
         ' ExitToolStripMenuItem
         ' 
@@ -225,11 +232,11 @@ Partial Class Form1
         PictureBox1.TabIndex = 6
         PictureBox1.TabStop = False
         ' 
-        ' GeneratePayrollToolStripMenuItem
+        ' ViewPayrollToolStripMenuItem
         ' 
-        GeneratePayrollToolStripMenuItem.Name = "GeneratePayrollToolStripMenuItem"
-        GeneratePayrollToolStripMenuItem.Size = New Size(224, 26)
-        GeneratePayrollToolStripMenuItem.Text = "GeneratePayroll"
+        ViewPayrollToolStripMenuItem.Name = "ViewPayrollToolStripMenuItem"
+        ViewPayrollToolStripMenuItem.Size = New Size(224, 26)
+        ViewPayrollToolStripMenuItem.Text = "View Payroll"
         ' 
         ' Form1
         ' 
@@ -282,5 +289,6 @@ Partial Class Form1
     Friend WithEvents EmployeesAttendenceToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents GeneratePayrollToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ViewPayrollToolStripMenuItem As ToolStripMenuItem
 
 End Class

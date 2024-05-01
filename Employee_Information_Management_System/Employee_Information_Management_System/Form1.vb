@@ -105,4 +105,8 @@
     Private Sub GeneratePayrollToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GeneratePayrollToolStripMenuItem.Click
         a20_PayrollForm.ShowDialog()
     End Sub
+
+    Private Sub ViewPayrollToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ViewPayrollToolStripMenuItem.Click
+        a21_ViewPayroll.ShowDialog()
+    End Sub
 End Class

@@ -15,7 +15,7 @@ Public Class a20_PayrollForm
         'Dim rnd As New Form_Round(Me)
         Try
             Dim ds As DataSet = New DataSet
-            Dim cmd As New SqlCommand("SELECT PayrollID, Payroll.EmpNo,EmpName, BaseSalary, TotalHours, TotalWorkingHours, CalculatedSalary,PayrollDate, ProvidentFund, TravelAllowance, DearnessAllowance, HouseRentAllowance, NetSalary, StartDate, EndDate, month FROM Payroll,EmpTable where Payroll.EmpNo = EmpTable.EmpNo", connection)
+            Dim cmd As New SqlCommand("SELECT Payroll.EmpNo,EmpName, BaseSalary, TotalHours, TotalWorkingHours, CalculatedSalary,PayrollDate, ProvidentFund, TravelAllowance, DearnessAllowance, HouseRentAllowance, NetSalary, StartDate, EndDate, month FROM Payroll,EmpTable where Payroll.EmpNo = EmpTable.EmpNo", connection)
             Dim da As New SqlDataAdapter(cmd)
             ds = New DataSet
 
@@ -35,22 +35,21 @@ Public Class a20_PayrollForm
 
             With dgvEmployees
                 .RowHeadersVisible = False
-                .Columns(0).HeaderText = "Payroll ID"
-                .Columns(1).HeaderText = "Employee Number"
-                .Columns(2).HeaderText = "Employee Name"
-                .Columns(3).HeaderText = "Base Salary"
-                .Columns(4).HeaderText = "Total Hours"
-                .Columns(5).HeaderText = "Total Working Hours"
-                .Columns(6).HeaderText = "Calculated Salary"
-                .Columns(7).HeaderText = "Payroll Date"
-                .Columns(8).HeaderText = "Provident Fund"
-                .Columns(9).HeaderText = "Travel Allowance"
-                .Columns(10).HeaderText = "Dearness Allowance"
-                .Columns(11).HeaderText = "House Rent Allowance"
-                .Columns(12).HeaderText = "Net Salary"
-                .Columns(13).HeaderText = "Start Date"
-                .Columns(14).HeaderText = "End Date"
-                .Columns(15).HeaderText = "Month"
+                .Columns(0).HeaderText = "Employee Number"
+                .Columns(1).HeaderText = "Employee Name"
+                .Columns(2).HeaderText = "Base Salary"
+                .Columns(3).HeaderText = "Total Hours"
+                .Columns(4).HeaderText = "Total Working Hours"
+                .Columns(5).HeaderText = "Calculated Salary"
+                .Columns(6).HeaderText = "Payroll Date"
+                .Columns(7).HeaderText = "Provident Fund"
+                .Columns(8).HeaderText = "Travel Allowance"
+                .Columns(9).HeaderText = "Dearness Allowance"
+                .Columns(10).HeaderText = "House Rent Allowance"
+                .Columns(11).HeaderText = "Net Salary"
+                .Columns(12).HeaderText = "Start Date"
+                .Columns(13).HeaderText = "End Date"
+                .Columns(14).HeaderText = "Month"
             End With
 
         Catch ex As Exception

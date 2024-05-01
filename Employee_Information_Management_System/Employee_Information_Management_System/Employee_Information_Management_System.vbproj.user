@@ -25,6 +25,9 @@
     <Compile Update="a20_payrollForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="a21_ViewPayroll.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="User.vb">
       <SubType>Form</SubType>
     </Compile>

@@ -27,6 +27,7 @@ Partial Class a20_payrollForm
         dgvEmployees = New DataGridView()
         btnExportToExcel = New Button()
         Panel1 = New Panel()
+        Label1 = New Label()
         Label6 = New Label()
         Label3 = New Label()
         cmbMonth = New ComboBox()
@@ -38,7 +39,6 @@ Partial Class a20_payrollForm
         Label4 = New Label()
         Label2 = New Label()
         btnGeneratePayroll = New Button()
-        Label1 = New Label()
         CType(dgvEmployees, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
         SuspendLayout()
@@ -97,6 +97,19 @@ Partial Class a20_payrollForm
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(1781, 164)
         Panel1.TabIndex = 28
+        ' 
+        ' Label1
+        ' 
+        Label1.BackColor = Color.IndianRed
+        Label1.Dock = DockStyle.Top
+        Label1.Font = New Font("Segoe UI", 15F, FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = Color.FromArgb(CByte(0), CByte(64), CByte(0))
+        Label1.Location = New Point(0, 0)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(1781, 63)
+        Label1.TabIndex = 44
+        Label1.Text = "Generate Payroll Of Employees"
+        Label1.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Label6
         ' 
@@ -195,23 +208,11 @@ Partial Class a20_payrollForm
         btnGeneratePayroll.Text = "Generate Payroll"
         btnGeneratePayroll.UseVisualStyleBackColor = False
         ' 
-        ' Label1
-        ' 
-        Label1.BackColor = Color.IndianRed
-        Label1.Dock = DockStyle.Top
-        Label1.Font = New Font("Segoe UI", 15F, FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = Color.FromArgb(CByte(0), CByte(64), CByte(0))
-        Label1.Location = New Point(0, 0)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(1781, 63)
-        Label1.TabIndex = 44
-        Label1.Text = "Generate Payroll Of Employees"
-        Label1.TextAlign = ContentAlignment.MiddleCenter
-        ' 
         ' a20_PayrollForm
         ' 
         AutoScaleDimensions = New SizeF(9F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        AutoSize = True
         ClientSize = New Size(1781, 713)
         Controls.Add(Panel1)
         Controls.Add(btnExportToExcel)
