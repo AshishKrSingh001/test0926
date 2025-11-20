@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;  
+    -ms-overflow-style: none;
+}
+.body{
+    padding:1vh 2vw;
+    height:95vh;
+    width:96vw; 
+}
+.body .head{
+    background-color:grey;
+    padding:2vh 0;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+    border-radius:2%;
+    float:right;
+    width:20vw;
+    margin:1vh 0;
+}
+.head a .link p{
+    text-align:center;
+    color:blue;
+}
+.main{
+    margin:10vh 7vw;
+    border-radius:5%;
+    border-top-left-radius:10%;
+    border-bottom-left-radius:10%;
+    height:80vh;
+    width:80vw;
+    background-color:grey;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.body .main .left{
+    border-top-left-radius:10%;
+    border-bottom-left-radius:10%;
+    width:20vw;
+    height:80vh;
+    background-color:blue;
+    padding: 10vh 2vw;
+    float: left;
+}
+.left{
+    color: white;
+}
+
+.left p{
+    text-align: center;
+}
+.left .down img{
+    height: 20vh;
+    width: 16vw;
+    border-radius: 10%;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+}
+.body .main .right{
+    width:60vw;
+    height:80vh;
+    /* background-color:white; */
+    padding: 0 2vw;
+    float: left;
+    margin:5vh 0;
+}
+
+.input{
+    border: none;
+    width: 25vw;
+    height:5vh;
+    border-radius: 2%;
+    padding:0 1vw;
+    margin: 1vh 0;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+}
+ul li.sub input,.transfer input{
+    border: none;
+    width: 25vw;
+    height:6vh;
+    border-radius: 2%;
+    padding:0 1vw;
+    margin: 1vh 0;
+    background-color: blue;
+    color: white;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+}
+.right .login a p{
+    text-align: center;
+    color: rgb(2, 35, 59);
+}
+.transfer input{
+    color: blue;
+    Background-color:grey;
+    text-align:center;
+}
+
+.upleft,.upright{
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    width:50%;  
+}
+.text{
+    border-radius: 2%;
+    width: 25vw;
+    border: none;
+    padding:1vh 1vw;
+    margin: 1vh 0;
+    color: black;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+}
+.upleft{
+    float:left;
+}

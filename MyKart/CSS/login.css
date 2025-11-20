@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;  
+    -ms-overflow-style: none;
+    font-size:1.2vw;
+}
+.body{
+    margin:1vw 2vw;
+    height:30vw;
+    width:96vw; 
+}
+.body .main{
+    margin:0 22vw;
+    border-radius:5%;
+    border-top-left-radius:10%;
+    border-bottom-left-radius:10%;
+    height:27vw;
+    width:50vw;
+    background-color:grey;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.body .main .left{
+    border-top-left-radius:10%;
+    border-bottom-left-radius:10%;
+    width:40%;
+    height:100%;
+    background-color:blue;
+    padding: 5vw 2vw;
+    float: left;
+}
+.left{
+    color: white;
+}
+
+.left p{
+    text-align: center;
+    font-size:1.2vw;
+}
+.left .down img{
+    height: 10vw;
+    width: 14vw;
+    border-radius: 10%;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+}
+.body .main .right{
+    width:60%;
+    height:100%;
+    /* background-color:white; */
+    padding: 5vh 2vw;
+    float: left;
+}
+
+.username, .password{
+    border: none;
+    width: 25vw;
+    height:2.5vw;
+    border-radius: 2%;
+    padding:0 1vw;
+    margin: .5vw 0;
+}
+ul li.sub input,.register{
+    border: none;
+    width: 25vw;
+    height:3vw;
+    border-radius: 2%;
+    padding:0 1vw;
+    margin: .5vw 0;
+    background-color: blue;
+    color: white;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+}
+.right .register a p{
+    text-align: center;
+    color: rgb(2, 35, 59);
+    font-size:1.2vw;
+}
+.register{
+    background-color: grey;
+    padding-top:1vw;
+}
+.register a{
+    color: blue;
+    text-align:center;
+}

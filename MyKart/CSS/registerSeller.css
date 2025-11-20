@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;  
+    -ms-overflow-style: none;
+}
+.body{
+    margin:1vw 2vw;
+    height:43vw;
+    width:96vw; 
+}
+.body .main{
+    margin:3vw 7vw;
+    border-radius:5%;
+    border-top-left-radius:10%;
+    border-bottom-left-radius:10%;
+    height:40vw;
+    width:80vw;
+    background-color:grey;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.body .main .left{
+    border-top-left-radius:10%;
+    border-bottom-left-radius:10%;
+    width:20vw;
+    height:40vw;
+    background-color:blue;
+    padding: 5vw 2vw;
+    float: left;
+}
+.left{
+    color: white;
+}
+
+.left p{
+    text-align: center;
+}
+.left .down img{
+    height: 10vw;
+    width: 16vw;
+    border-radius: 10%;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+}
+.body .main .right{
+    width:60vw;
+    height:40vw;
+    /* background-color:white; */
+    padding: 2vw 2vw;
+    float: left;
+}
+
+.input{
+    border: none;
+    width: 25vw;
+    height:2.5vw;
+    border-radius: 2%;
+    padding:0 1vw;
+    margin: .5vw 0;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+}
+ul li.sub input,.transfer{
+    border: none;
+    width: 25vw;
+    height:3vw;
+    border-radius: 2%;
+    padding:0 1vw;
+    margin: .5vw 0;
+    background-color: blue;
+    color: white;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+}
+.right .login a p{
+    text-align: center;
+    color: rgb(2, 35, 59);
+}
+.transfer{
+    background-color: grey;
+    padding-top:1vw;
+}
+.transfer a{
+    color: blue;
+    text-align:center;
+}
+
+.upleft,.upright{
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    width:50%;  
+}
+.text{
+    border-radius: 2%;
+    width: 25vw;
+    border: none;
+    padding:.5vw 1vw;
+    margin: .5vw 0;
+    color: black;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+}
+.upleft{
+    float:left;
+}
+.adimage{
+    border-radius: 2%;
+    width:25vw;
+    height:12.5vw;
+    margin-top:3vw;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+}
+.sub input{
+    cursor:pointer;
+}
